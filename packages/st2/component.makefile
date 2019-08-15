@@ -33,6 +33,7 @@ populate_version: .stamp-populate_version
 
 requirements: .stamp-requirements
 .stamp-requirements:
+	python -m pip install pip==9.0.3
 	python ../scripts/fixate-requirements.py -s in-requirements.txt -f ../fixed-requirements.txt
 	cat requirements.txt
 
